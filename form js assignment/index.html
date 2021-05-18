@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Aamer- Form Validation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+		<header>
+			<div class="grid">
+				<h1>
+					JavaScript Validation assignment
+					<small>Tutorials, Exercises, Assignments</small>
+				</h1>
+			</div>
+		</header>
+		<section class="body">
+			<div class="grid">
+				<h2>Validate form fields using javascript - the beginners way</h2>
+				<p class="intro">In this assignment you have to validate form fields using javascript - the beginners way.</p>
+			</div>
+			<div class="grid">
+				<h4>All the fields are mandatory</h4>
+				<form id = "form" class="form">
+					<fieldset class="form">
+						<p><strong>Personal details</strong></p>
+						<div class="grid">
+							<p class="col-6-12">
+								<label>
+									<span>Your name</span>
+									<span><input type="text" id="name" placeholder="Parvez Ansari" /></span>
+									<small class="errorMsg">Please enter your name</small>
+								</label>
+							</p>
+							<p class="col-6-12">
+								<label>
+									<span>Email</span>
+									<span><input type="email" id="email" placeholder="ansariparvez@gmail.com" /></span>
+									<small class="errorMsg">Please enter valid email address</small>
+								</label>
+							</p>
+						</div>
+						<div class="grid">
+							<p class="col-6-12">
+								<label>
+									<span>Gender</span>
+                  <span>
+                    <input type="radio" name="gender" value="male" id="male"/>Male 
+                    <input type="radio" name="gender" value="female" id="female"/>Female
+                  </span>
+									<small class="errorMsg">Please select your gender</small>
+								</label>
+							</p>
+							<p class="col-6-12">
+								<label>
+									<span>Date of birth</span>
+									<span><input type="date" id="bday" placeholder="Date of Birth" /></span>
+									<small class="errorMsg">Please enter your DOB</small>
+								</label>
+							</p>
+						</div>
+						<div class="grid">
+							<p class="col-6-12">
+								<label>
+									<span>Mobile</span>
+									<span><input type="number" id="mobile" placeholder="Mobile" /></span>
+									<small class="errorMsg">Mobile number should be 10 digits numbers only</small>
+								</label>
+							</p>
+
+							<p class="col-6-12">
+								<label>
+									<span>Address</span>
+									<span><textarea col="10" rows="2" id="address"></textarea></span>
+									<small class="errorMsg">Please enter your address</small>
+								</label>
+							</p>
+						</div>
+						<div class="grid">
+							<p class="col-6-12">
+								<label>
+									<span>City
+									<select id="city">
+										<option value="">Select</option>
+										<option value="male">Mumbai</option>
+										<option value="female">Chennai</option>
+										<option value="kid">Bangalore</option>
+										<option value="kid">Delhi</option>
+									</select></span>
+									<small class="errorMsg">Please select your city</small>
+								</label>
+							</p>
+							<p class="col-6-12">
+								<label>
+									<span>Country
+									<input type="text" list="country" id="mycountry">
+									<datalist id="country">
+										<option value="India">
+										<option value="United States">
+										<option value="United Kingdom">
+										<option value="Italy">
+										<option value="Australia">
+									</datalist></span>
+									<small class="errorMsg">Please enter your country</small>
+								</label>
+							</p>
+						</div>
+						<div class="grid">
+							<p class="col-6-12 ">
+							<label >
+									<span>Expertise</span>
+									<span>
+										<input type="checkbox"  value="html" name="html" id="chk1"/>HTML
+										<input type="checkbox" name="css" value="css" name="css" id="chk2"/>CSS
+										<input type="checkbox" name="javascript" value="javascript" name="Javascript" id="chk3"/>Javascript
+										<input type="checkbox" name="jquery" value="jquery" name="jQuery" id="chk4"/>jQuery
+									</span>
+									<small class="errorMsg">Please select atleast one expertise</small>
+							</label>
+							</p>
+							<p class="col-6-12">
+								<label>
+									<span>Group</span>
+									<select multiple id="mygroup">
+
+										<option value="male">Family</option>
+										<option value="female">Friend</option>
+										<option value="kid">Co-Worker</option>
+										<option value="kid">Neighbour</option>
+									</select>
+									<small
+                         class="errorMsg">Please assign atleast one group</small>
+								</label>
+							</p>
+						</div>
+
+					</fieldset>
+					<div class="actionBar">
+						<button class="btn" type="submit">Save</button>
+					</div>
+				</form>
+				<div style="margin-top:50px" id="showMe">
+					<div class="msg err" id="suc">
+						<h3>Congratulations!</p>
+						<p>You have successfully validated the form</p>
+						<p><a href="index.html" class="toggleForm">Show the form again</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

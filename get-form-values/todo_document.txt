@@ -1,0 +1,36 @@
+In this assignment we have to get values of form elements using javascript. The assignment ensures that you are able to get the values from any form elements such as input, email, select box, check box, radio button.
+
+Get values of form elements using javascript : assignment requirements
+We will be getting the values of the following forms elements:
+
+Input type text
+Input type radio
+Input type date
+Textarea
+Select
+Datalist
+Input type checkbox
+Multiple select
+Please note in case of multiple choices such as skills and group, we need to show ‘comma’ seprates values eg. Skills : html, css and Group: Family, Friends.
+
+Also note there is no ‘comma’ after the last value.
+
+Clear the forms fields and values, once the form submitted
+
+
+
+**** Get values of form elements using javascript : concepts you will use and learn ****
+
+Variables
+Form submit event
+Button click event
+Read value from a text field using javascript
+Get value from a select box using javascript
+Getting value from a input type date field using javascript
+Values from input type radio button using javascript
+Getting input from a input type radio using javascript
+Getting input from a input type checkboxes using javascript
+Getting input from a multiple select list using javascript
+Getting input from a datalist using javascript
+innerHTML property
+For loop

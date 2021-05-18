@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+		<script src="get-form-values.js"></script>
+    </head>
+    <body>
+		<header>
+			<div class="grid">
+				<h1>
+					JavaScript Assignment
+				</h1>
+			</div>
+		</header>
+		<section class="body">
+			<div class="grid">
+				<h2>Get values of form elements using javascript</h2>
+				<p class="intro">In this assignment we have to get values of form elements using javascript. The assignment ensures that you are able to get the values from any form elements such as input, email, select box, check box, radio button.</p>
+			</div>
+			<div class="grid">
+				<div class="col-6-12">
+					<h4>Use this form to get information</h4>
+					<form id ="myform">
+						<fieldset class="form">
+							<p><strong>Personal details</strong></p>
+							<p>
+								<label>
+									<span>Your name</span>
+									<span><input type="text" id="name" placeholder="Your Name" /></span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>Gender</span>
+									<span><input type="radio" name="gender" value="male" />Male <input type="radio" name="gender" value="female" />Female</span>
+
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>Date of birth</span>
+									<span><input type="date" id="dob" placeholder="Date of Birth" /></span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>Address</span>
+									<span><textarea col="10" rows="2"></textarea></span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>City</span>
+									<select>
+										<option value="">Select</option>
+										<option value="male">Mumbai</option>
+										<option value="female">Chennai</option>
+										<option value="kid">Bangalore</option>
+										<option value="kid">Delhi</option>
+									</select>
+								</label>
+							</p>
+							<p>
+								<label>
+									<span>Country</span>
+									<input list="country">
+									<datalist id="country">
+										<option value="India">
+										<option value="United States">
+										<option value="United Kingdom">
+										<option value="Italy">
+										<option value="Australia">
+									</datalist>
+								</label>
+							</p>
+							<p>
+							<label>
+									<span>Expertise</span>
+									<span>
+										<input type="checkbox" value="html" name="html"/>HTML
+										<input type="checkbox" name="css" value="css" name="css" />CSS
+										<input type="checkbox" name="javascript" value="javascript" name="Javascript" />Javascript
+										<input type="checkbox" name="jquery" value="jquery" name="jQuery" />jQuery
+									</span>
+							</label>
+							</p>
+							<p>
+								<label>
+									<span>Group</span>
+									<select multiple>
+
+										<option value="male">Family</option>
+										<option value="female">Friend</option>
+										<option value="kid">Co-Worker</option>
+										<option value="kid">Neighbour</option>
+									</select>
+								</label>
+							</p>
+
+
+						</fieldset>
+						<div class="actionBar">
+							<button class="btn">Save</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-6-12">
+					<h4>Update the div below as per the example after the form is submitted</h4>
+					<div class="msg output">
+						<p><strong>Name:</strong> <span id="nameVal">Parvez Ansari</span></p>
+						<p><strong>Gender </strong> <span id="genderVal">Male</span></p>
+						<p><strong>Date of Birth:</strong> <span id="dobVal">12/11/1974</span></p>
+						<p><strong>Address:</strong> <span id="addressVal">3/2, Byculla(w)</span></p>
+						<p><strong>City:</strong> <span id="cityVal">Mumbai</span></p>
+						<p><strong>Country:</strong> <span id="countryVal">India</span></p>
+						<p><strong>Expertise:</strong> <span id="expertiseVal">HTML,CSS,Javacript</span></p>
+						<p><strong>Group:</strong> <span id="groupVal">Family, Friends</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+    </body>
+</html>
